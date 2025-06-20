@@ -20,6 +20,7 @@ packages = [{include = "soc_sage", from = "soc_sage"}]
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.3.7"
 pyink = "^24.10.1"
+pytest = "^8.4.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
