@@ -47,7 +47,7 @@ class SplunkApiCaller:
         splunk_cert_state = os.getenv("SPLUNK_CERT")
         # If the splunk server uses the self-signed certificate,
         # disables SSL verification
-        if splunk_cert_state == "self_signed":
+        if splunk_cert_state == "SELF_SIGNED":
             self.ssl_context.check_hostname = False
             self.ssl_context.verify_mode = ssl.CERT_NONE
 
